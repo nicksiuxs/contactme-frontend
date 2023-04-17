@@ -1,10 +1,14 @@
 import React from "react";
+import { Routes, Route } from "react-router-dom";
+import Login from "./pages/Client/LoginClient";
+import NotFound from "./pages/NotFound/NotFound";
 
-const App = (): JSX.Element => {
+const App: React.FC = () => {
   return (
-    <div>
-      <h1>Contact me</h1>
-    </div>
+    <Routes>
+      <Route path="/" element={<Login />} />
+      <Route path="/*" element={<NotFound />} />
+    </Routes>
   );
 };
 
