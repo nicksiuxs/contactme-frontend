@@ -1,6 +1,6 @@
 import React from "react";
 
-const Login = (): JSX.Element => {
+const Login: React.FC = () => {
   return (
     <div>
       <h1>Login Page</h1>

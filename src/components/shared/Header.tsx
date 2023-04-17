@@ -1,6 +1,6 @@
 import React from "react";
 
-const Header = (): JSX.Element => {
+const Header: React.FC = () => {
   return (
     <header>
       <img src="/" />
