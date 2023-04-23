@@ -1,9 +1,9 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import Login from "./pages/Client/LoginClient";
+import Login from "./pages/Login/Login";
 import NotFound from "./pages/NotFound/NotFound";
 
-const App: React.FC = () => {
+const App = () => {
   return (
     <Routes>
       <Route path="/" element={<Login />} />
