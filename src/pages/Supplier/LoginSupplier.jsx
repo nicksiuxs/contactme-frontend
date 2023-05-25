@@ -1,6 +1,6 @@
 import React from "react";
 
-const LoginSupplier = (): JSX.Element => {
+const LoginSupplier = () => {
   return (
     <div>
       <h1>LoginSupplier</h1>
