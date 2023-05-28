@@ -1,9 +1,10 @@
 import React from "react";
+import Logo from "../../assets/contacme-logo.png"
 
-const Header: React.FC = () => {
+const Header = () => {
   return (
-    <header className="bg-gray-800">
-      <img src="/" />
+    <header className="bg-gray-800 flex items-center justify-between">
+      <img src={Logo} />
       <nav>
         <a href="#">Publicaciones</a>
         <a href="#">Mensajes</a>
