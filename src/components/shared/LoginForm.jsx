@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import Logo from "../../assets/contacme-logo.png"
 
 import useForm from '../../customHooks/useForm';
+import Input from './Input';
 
 const LoginForm = ({ title, route, handleSubmit }) => {
     const { email, password, onInputChange } = useForm({ email: "", password: "" });
@@ -23,8 +24,8 @@ const LoginForm = ({ title, route, handleSubmit }) => {
             <img src={Logo} alt="Contact Me" />
             <h1>{title}</h1>
             <form onSubmit={onSubmit}>
-                <input className="border" type="email" name="email" value={email} onChange={onInputChange} />
-                <input className="border" type="password" name="password" value={password} onChange={onInputChange} />
+                <Input placeholder={"Correo electrónico"} type="email" name="email" value={email} onChange={onInputChange} styles={"border"} />
+                <Input placeholder={"Contraseña"} type="password" name="password" value={password} onChange={onInputChange} styles={"border"} />
                 <button type="submit">Iniciar sesión</button>
             </form>
             <hr />
