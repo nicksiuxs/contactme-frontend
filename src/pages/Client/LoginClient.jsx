@@ -4,13 +4,17 @@ import LoginForm from "../../components/shared/LoginForm";
 
 import { useDispatch } from "react-redux";
 import { loginUser } from "../../context/thunks/userThunks";
+import { useNavigate } from "react-router-dom";
 const LoginClient = () => {
 
   const dispatch = useDispatch();
+  const navigate = useNavigate();
 
   const handleSubmit = (email, password) => {
-    console.log(email, password)
-    dispatch(loginUser(email, password))
+    dispatch(loginUser(email, password)).then(res => {
+      navigate("/client")
+    });
+
   }
 
   return <div>
