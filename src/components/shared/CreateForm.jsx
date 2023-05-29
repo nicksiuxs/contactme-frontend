@@ -1,12 +1,10 @@
 import React from 'react';
 import Logo from "../../assets/contacme-logo.png";
 import useForm from '../../customHooks/useForm';
-import { useNavigate } from 'react-router-dom';
 import Input from './Input';
 
 const CreateForm = ({ title, handleSubmit }) => {
     const { name, lastname, phone, birthdate, email, password, onInputChange } = useForm({ name: "", lastname: "", phone: "", birthdate: "", email: "", password: "" });
-    const navigate = useNavigate();
 
     const onSubmit = (e) => {
         e.preventDefault()
