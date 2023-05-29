@@ -23,8 +23,8 @@ const LoginForm = ({ title, route, handleSubmit }) => {
             <img src={Logo} alt="Contact Me" />
             <h1>{title}</h1>
             <form onSubmit={onSubmit}>
-                <input class="border" type="email" name="email" value={email} onChange={onInputChange} />
-                <input class="border" type="password" name="password" value={password} onChange={onInputChange} />
+                <input className="border" type="email" name="email" value={email} onChange={onInputChange} />
+                <input className="border" type="password" name="password" value={password} onChange={onInputChange} />
                 <button type="submit">Iniciar sesión</button>
             </form>
             <hr />
