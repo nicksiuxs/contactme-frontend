@@ -6,6 +6,7 @@ import NotFound from "../pages/NotFound/NotFound";
 import UserRouter from "./UserRoutes"
 import LoginClient from '../pages/Client/LoginClient';
 import LoginSupplier from '../pages/Supplier/LoginSupplier';
+import CreateClient from '../pages/Client/CreateClient';
 
 const AppRoutes = () => {
     return (
@@ -13,7 +14,7 @@ const AppRoutes = () => {
             <Route path="/" element={<Login />} />
             <Route path="login/client" element={<LoginClient />} />
             <Route path="login/supplier" element={<LoginSupplier />} />
-            <Route path="create/client" element={<><h1>Create client</h1></>} />
+            <Route path="create/client" element={<CreateClient />} />
             <Route path="create/supplier" element={<><h1>Create supplier</h1></>} />
             <Route path='/*' element={<UserRouter />} />
             <Route path="*" element={<NotFound />} />
