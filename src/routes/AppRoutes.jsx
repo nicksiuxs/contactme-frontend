@@ -8,6 +8,7 @@ import LoginClient from '../pages/Client/LoginClient';
 import LoginSupplier from '../pages/Supplier/LoginSupplier';
 import CreateClient from '../pages/Client/CreateClient';
 import CreateSupplier from '../pages/Supplier/CreateSupplier';
+import PrivateRoutes from './PrivateRoutes';
 
 const AppRoutes = () => {
     return (
@@ -17,7 +18,9 @@ const AppRoutes = () => {
             <Route path="login/supplier" element={<LoginSupplier />} />
             <Route path="create/client" element={<CreateClient />} />
             <Route path="create/supplier" element={<CreateSupplier />} />
-            <Route path='/*' element={<UserRouter />} />
+            <Route path='/*' element={<PrivateRoutes>
+                <UserRouter />
+            </PrivateRoutes>} />
             <Route path="*" element={<NotFound />} />
         </Routes>
     )
