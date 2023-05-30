@@ -17,9 +17,9 @@ const LoginClient = () => {
 
   }
 
-  return <div>
-    <LoginForm title="Iniciar sesión como Cliente" route={"/create/client"} handleSubmit={handleSubmit} />
-  </div>;
+  return <main className="p-3 h-screen flex justify-center items-center max-h-[90vh]">
+    <LoginForm title="Iniciar sesión como cliente" route={"/create/client"} handleSubmit={handleSubmit} />
+  </main>;
 };
 
 export default LoginClient;
