@@ -6,7 +6,9 @@ const Input = ({ label, placeholder, name, type, value, onChange, styles }) => {
       {
         label ? <label htmlFor={name}>{label}</label> : null
       }
-      <input className={styles} type={type ? type : "text"} id={name} name={name} placeholder={placeholder ? placeholder : ""} value={value} onChange={onChange} />
+      <input type={type ? type : "text"} id={name} name={name} placeholder={placeholder ? placeholder : ""} value={value} onChange={onChange}
+        className={"w-full py-2 px-3 rounded text-sm " + styles}
+      />
     </div>
   )
 }
