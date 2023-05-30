@@ -10,9 +10,9 @@ const CreateClient = () => {
   }
 
   return (
-    <div>
-      <CreateForm title="Crea una cuenta como Cliente" handleSubmit={handleSubmit} />
-    </div>
+    <main className="p-3 h-screen flex justify-center items-center max-h-[90vh]">
+      <CreateForm title="Crea una cuenta como cliente" handleSubmit={handleSubmit} />
+    </main>
   );
 };
 

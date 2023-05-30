@@ -26,8 +26,8 @@ const LoginForm = ({ title, route, handleSubmit }) => {
             <img src={Logo} alt="Contact Me" className="w-14 mb-6" />
             <Title title={title} styles={"mb-10"} />
             <form onSubmit={onSubmit} className='w-full mb-7'>
-                <Input placeholder={"Correo electrónico"} type="email" name="email" value={email} onChange={onInputChange} styles={"border mb-3"} />
-                <Input placeholder={"Contraseña"} type="password" name="password" value={password} onChange={onInputChange} styles={"border"} />
+                <Input placeholder={"Correo electrónico"} type="email" name="email" value={email} onChange={onInputChange} styles={"mb-3"} />
+                <Input placeholder={"Contraseña"} type="password" name="password" value={password} onChange={onInputChange} styles={""} />
                 <p className='text-center mt-7 mb-7 text-indigo-600'>¿Olvidaste tu contraseña?</p>
                 <Button label={"Iniciar sesión"} />
             </form>
